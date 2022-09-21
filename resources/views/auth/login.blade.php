@@ -130,7 +130,9 @@
                                         @endif
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        @if (Route::has('register'))
+                                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
