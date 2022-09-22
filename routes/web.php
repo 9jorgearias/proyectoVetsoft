@@ -28,4 +28,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
 Route::get('/usuarios', [UserController::class, 'index'])->name('ListUser');
+
+
