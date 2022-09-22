@@ -26,3 +26,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('clientes', function () {
+    $mensaje = 'vista principal clientes';
+    return $mensaje;
+    });
