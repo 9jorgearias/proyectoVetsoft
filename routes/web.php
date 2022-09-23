@@ -29,3 +29,5 @@ Route::middleware([
 });
 
 Route::get('/usuarios', [UserController::class, 'index'])->name('ListUser');
+
+
