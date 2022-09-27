@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\User;
+use App\Http\Controllers\ClienteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,9 +23,7 @@ Route::get('/', function () {
         return view('dashboard');
     })->name('dashboard');
 //});
-Route::get('cliente', function () {
-    return view('create');
-});
+Route::resource("/cliente", ClienteController::class);
 
 //  Route::get('cliente', function () {
 //     return view('create');
