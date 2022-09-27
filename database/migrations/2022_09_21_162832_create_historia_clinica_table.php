@@ -56,8 +56,8 @@ return new class extends Migration
             $table->boolean('Piel y Anexos');
             $table->integer('idMascota')->unsigned();
             $table->foreign('idMascota')->references('idMascota')->on('mascotas'); 
-            $table->integer('id')->unsigned();
-            $table->foreign('id')->references('id')->on('users');  
+            //$table->integer('id')->unsigned();
+            //$table->foreign('id')->references('id')->on('users');  
             $table->timestamps();
         });
     }

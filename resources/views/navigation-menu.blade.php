@@ -15,6 +15,39 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
+
+                    <x-jet-nav-link :active="request()->routeIs('configuracion')">
+                    configuracion
+                    </x-jet-nav-link>
+
+                    <x-jet-nav-link :active="request()->routeIs('Usuarios')">
+                        Usuarios
+                    </x-jet-nav-link>
+        
+                    <x-jet-nav-link :active="request()->routeIs('Servicios')">
+                        Servicios
+                    </x-jet-nav-link>
+        
+                    <x-jet-nav-link :active="request()->routeIs('Agenda')">
+                        Agenda
+                    </x-jet-nav-link>
+        
+                    <x-jet-nav-link :active="request()->routeIs('Clientes/Mascotas')">
+                        Clientes/Mascotas
+                    </x-jet-nav-link>
+        
+                    <x-jet-nav-link :active="request()->routeIs('HistoriasClinicas')">
+                        HistoriasClinicas
+                    </x-jet-nav-link>
+        
+                    <x-jet-nav-link :active="request()->routeIs('Citas')">
+                        Citas
+                    </x-jet-nav-link>
+        
+                    <x-jet-nav-link :active="request()->routeIs('Ayudas')">
+                        Ayudas
+                    </x-jet-nav-link>
+
                 </div>
             </div>
 
@@ -140,6 +173,39 @@
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Configuración')">
+                Configuración
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Usuarios')">
+                Usuarios
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Servicios')">
+                Servicios
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Agenda')">
+                Agenda
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Clientes/Mascotas')">
+                Clientes/Mascotas
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('HistoriasClinicas')">
+                HistoriasClinicas
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Citas')">
+                Citas
+            </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('Ayudas')">
+                Ayudas
+            </x-jet-responsive-nav-link>
+
         </div>
 
         <!-- Responsive Settings Options -->

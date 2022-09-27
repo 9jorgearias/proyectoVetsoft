@@ -15,13 +15,11 @@ use Illuminate\Database\Eloquent\Model;
  * @property $Correo
  * @property $Edad
  * @property $Telefono
- * @property $id
  * @property $created_at
  * @property $updated_at
  *
  * @property Cita[] $citas
  * @property Mascota[] $mascotas
- * @property User $user
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
@@ -63,14 +61,6 @@ class Cliente extends Model
     public function mascotas()
     {
         return $this->hasMany('App\Models\Mascota', 'idCliente', 'idCliente');
-    }
-    
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function user()
-    {
-        return $this->hasOne('App\Models\User', 'id', 'id');
     }
     
 

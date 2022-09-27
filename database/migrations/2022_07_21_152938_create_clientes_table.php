@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('Correo')->unique();
             $table->integer('Edad');
             $table->integer('Telefono');
-            $table->integer('id')->unsigned();
-            $table->foreign('id')->references('id')->on('users');   
+            //$table->integer('id')->unsigned();
+            //$table->foreign('id')->references('id')->on('users');   
             $table->timestamps();
         });
     }

@@ -22,8 +22,8 @@ return new class extends Migration
             $table->time('Hora_final');
             $table->date('Fecha_inicio');
             $table->date('Fecha_final');
-            $table->integer('id')->unsigned();
-            $table->foreign('id')->references('id')->on('users');
+            //$table->integer('id')->unsigned();
+            //$table->foreign('id')->references('id')->on('users');
             $table->timestamps();
         });
     }
